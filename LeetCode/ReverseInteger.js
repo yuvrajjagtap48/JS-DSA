@@ -12,3 +12,4 @@ function ReverseInterger(n) {
 
 let result = ReverseInterger(-123);
 console.log(result);
+
