@@ -30,3 +30,5 @@ function guess(num) {
 }   
 let result = guessNumber(10);
 console.log(result);
+
+function gue
