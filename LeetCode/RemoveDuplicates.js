@@ -6,7 +6,7 @@ function RemoveDuplicates(nums){
             nums[x] = nums[i];
         }
     }
-    return x + 1;
+    return x+1;
 }
-let nums= [1,1,2];
+let nums= [0,0,1,1,1,2,2,3,3,4];
 console.log(RemoveDuplicates(nums));
