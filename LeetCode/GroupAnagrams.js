@@ -40,18 +40,19 @@ function groupAnagrams(strs) {
     }
     return Object.values(map);
 }
-
+// time complexity: O(n * k) where n is the number of strings and k is the maximum length of a string
+// space complexity: O(n * k) where n is the number of strings and k is the maximum length of a string
 
 var groupAnagrams = function(strs) {
     let map = new Map();
     for (let i = 0; i < strs.length; i++) {
         let str = strs[i];
-        let count = new Array(26).fill(0);
+        let freqArr = new Array(26).fill(0);
         for (let j = 0; j < str.length; j++) {
-            let index = str.charCodeAt(j) - 97;
-            count[index]++;
+            let index = str.charCodeAt(j) - 97;    // 'a' has ASCII code 97
+            freqArr[index]++;
         }
-        let key = count.join('#');
+        let key = freqArr.join('#');
         if (!map.has(key)) {
             map.set(key, []);
         }
