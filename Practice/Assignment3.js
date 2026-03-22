@@ -116,3 +116,15 @@ function Anagram(str){
 
 let result = Anagram("Hello, world!");
 console.log(result);
+
+function TwoSum(nums, target) {
+    let map = new Map();    
+    for(let i = 0; i < nums.length; i++) {
+        const num = nums[i];
+        const diff = target - num;
+        if(map.has(diff)) {
+            return [map.get(diff), i];
+        }
+        map.set(num, i);
+    }
+}
