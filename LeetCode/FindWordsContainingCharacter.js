@@ -29,3 +29,7 @@ function findWords(words, character) {
     }
     return result;
 }
+
+
+// time complexity -> O(n*m) where n is the number of words and m is the average length of the words
+// space complexity-> O(1) 

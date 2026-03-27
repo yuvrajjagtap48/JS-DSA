@@ -40,5 +40,4 @@ function JewelsAndStones(Jewels, Stones) {
         }    
     }
     return count;
-
 }
