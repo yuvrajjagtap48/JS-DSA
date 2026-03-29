@@ -39,3 +39,10 @@ const arr1 = ['Hello', 'World'];
 const arr2 = [  'JavaScript'];
 console.log(joinTwoArray(arr1, arr2)); // Output: ["Hello", "World", "JavaScript"]
 
+
+// more optimized way
+function joinTwoArray(arr1, arr2) {
+    return arr1.concat(arr2);
+}
+
+
