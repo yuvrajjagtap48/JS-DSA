@@ -35,7 +35,7 @@ function merge(nums1, m, nums2, n) {
         if(p2 < 0) break;
         if(nums1[p1] > nums2[p2]){
             nums1[i] = nums1[p1];
-            p1--; 
+            p1--;
         }
         else{
             nums1[i] = nums2[p2];
