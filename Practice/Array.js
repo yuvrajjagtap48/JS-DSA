@@ -46,3 +46,23 @@ function joinTwoArray(arr1, arr2) {
 }
 
 
+function longestSubString(str) {
+    let longest = '';
+    let current = '';
+    for(let i = 0; i < str.length; i++){
+        if(current.includes(str[i])){
+            if(current.length > longest.length){
+                longest = current;
+            }
+            current = current.substring(current.indexOf(str[i]) + 1) + str[i];
+        } else {
+            current = current + str[i];
+        }   
+    }
+    if(current.length > longest.length){
+        longest = current;
+    }
+    return longest;
+}
+
+console.log(longestSubString("abcabcbb")); // Output: "abc"
