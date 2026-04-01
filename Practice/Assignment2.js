@@ -99,6 +99,17 @@
 //     }
 //     return x + 1;
 // }
+// function RemoveDuplicates(arr){
+//     let map = {};
+//     let res = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(!map[arr[i]]){
+//             map[arr[i]] = 1;
+//             res.push(arr[i])
+//         }
+//     }
+//     return res;
+// }
 
 
 

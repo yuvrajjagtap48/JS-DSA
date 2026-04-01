@@ -29,4 +29,4 @@ function ValidAnagram(s, t) {
 }
 
 // Time complexity => O(n + n) => O(n)
-// Space Complexity => O(1) => Because max length of MAp{} is 26(A-Z) => O(1)
+// Space Complexity => O(1) => Because max length of Map{} is 26(A-Z) => O(1)
