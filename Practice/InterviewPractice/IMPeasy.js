@@ -134,6 +134,7 @@ function maxSubArray(arr){
     }
     return maxSum;
 }
+// kadane's algorithm
 // function maxSubArray(arr){
 //     let maxSum = arr[0];
 //     let curr = arr[0];
