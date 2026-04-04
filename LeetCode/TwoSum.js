@@ -33,18 +33,28 @@ console.log(TwoSum(nums, target));
 // space complexity: O(n)
 
 
-function TwoSum(arr, target) {
-    let map = new Map();
-    for (let i = 0; i < arr.length; i++) {
-        const num = arr[i];
-        const diff = target - num;
-        if(map.has(diff)) {
-            return [map.get(diff), i];
-        }
-        map.set(num, i);
-    }
-}
+// function TwoSum(arr, target) {
+//     let map = new Map();
+//     for (let i = 0; i < arr.length; i++) {
+//         const num = arr[i];
+//         const diff = target - num;
+//         if(map.has(diff)) {
+//             return [map.get(diff), i];
+//         }
+//         map.set(num, i);
+//     }
+// }
 // time complexity: O(n)
 // space complexity: O(n)
 
 
+function TwoSum(arr,target){
+    let map = {};
+    for(let i =0; i < arr.length; i++){
+        let diff = target - nums[i];
+        if(map[diff] !== undefined){
+            return [map[diff], i];
+        }
+        map[nums[i]] = i;
+    }
+}

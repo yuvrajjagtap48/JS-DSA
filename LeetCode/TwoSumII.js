@@ -1,6 +1,4 @@
 function twoSum(numbers, target) {
-    let left = 0;
-    let right = numbers.length - 1;
     for(let i = 0; i < numbers.length; i++){
         for(let j = i + 1; j < numbers.length; j++){
             if(numbers[i] + numbers[j] === target){
