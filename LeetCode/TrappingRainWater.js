@@ -47,7 +47,6 @@ console.log(trappingRainWater(height));
 //     let ans = 0;
 //     for(let i = 0; i < n; i++){
 //         let waterTrapped = Math.min(maxL[i], maxR[i]) - height[i];
-//         // ans = ans + (waterTrapped < 0 ? 0 : waterTrapped);
 //         ans = ans + Math.max(waterTrapped, 0);
 //     }
 //     return ans;
