@@ -1,30 +1,29 @@
 function singleNonDuplicate(nums) {
     let l = 0;
     let r = nums.length - 1;
-    while (l <= r) {
+    while(l < r){
         let mid = Math.floor(l + (r - l) / 2);
-        // pair is on the left side
-        if (nums[mid] === nums[mid - 1]) {
+        if(nums[mid] === nums[mid - 1]){
             leftCount = mid - l + 1;
-            if (leftCount % 2 === 1) {
+            if(leftCount % 2 === 1){
                 r = mid - 2;
             }
-            else {
+            else{
                 l = mid + 1;
             }
         }
-        // pair is on the right side
-        else if (nums[mid] === nums[mid + 1]) {
+        //right side
+        else if(nums[mid] === nums[mid + 1]){
             leftCount = mid - l;
-            if (leftCount % 2 === 1) {
+            if(leftCount % 2 === 1){
                 r = mid - 1;
             }
-            else {
+            else{
                 l = mid + 2;
             }
         }
         // single element is at mid
-        else {
+        else{
             return nums[mid];
         }
     }
