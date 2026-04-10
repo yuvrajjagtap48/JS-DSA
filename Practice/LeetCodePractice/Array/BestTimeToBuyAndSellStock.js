@@ -11,5 +11,6 @@ function BuyAndSell(prices){
     }
     return maxProfit;
 }
+
 const prices = [7, 1, 5, 3, 10, 4];
 console.log(BuyAndSell(prices));
