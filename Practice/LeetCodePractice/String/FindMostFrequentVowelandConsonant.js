@@ -1,5 +1,5 @@
 function find(s){
-    let map ={};
+    let map = {};
     for(let i = 0; i < s.length; i++){
         if(!map[s[i]]){
             map[s[i]] = 1;
@@ -23,10 +23,8 @@ function find(s){
             }
         }
     }
-    return maxVowels + maxConsonant;
+    return maxConsonant + maxVowels;
 }
-
-
 
 let s = "helleeworld";
 console.log(find(s));

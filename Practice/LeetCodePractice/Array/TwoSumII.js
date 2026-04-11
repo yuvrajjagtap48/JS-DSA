@@ -1,7 +1,3 @@
-const numbers = [2, 7, 11, 15];
-const target = 13;
-console.log(twoSum(numbers, target));
-
 function twoSum(numbers, target){
     let l = 0;
     let r = numbers.length - 1;
@@ -17,5 +13,9 @@ function twoSum(numbers, target){
             return [l+1, r+1];
         }
     }
-    return [];
+    return -1;
 }
+ 
+const numbers = [2, 7, 11, 15];
+const target = 26;
+console.log(twoSum(numbers, target)); 
