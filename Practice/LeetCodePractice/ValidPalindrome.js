@@ -59,3 +59,8 @@ function ValidPalindrome(s){
 }
 const s = "A man a plan a canal: Panama";
 console.log(ValidPalindrome(s));
+
+
+function valid(num){
+    
+}
