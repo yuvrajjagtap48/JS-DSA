@@ -20,3 +20,4 @@ var firstBadVersion = function (n) {
 
 let n = 7;
 console.log(firstBadVersion(n)); 
+
