@@ -5,3 +5,4 @@ function square(x){
 
 let value = square(5);
 console.log(value); 
+
