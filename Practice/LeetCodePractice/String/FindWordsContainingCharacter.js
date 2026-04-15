@@ -23,4 +23,3 @@ function findWords(words, character){
 let words = ["hello", "world", "hi", "hii"];
 let character = "i";
 console.log(findWords(words, character));
-

@@ -17,3 +17,4 @@ function max(nums){
 
 const nums = [1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1];
 console.log(max(nums));
+

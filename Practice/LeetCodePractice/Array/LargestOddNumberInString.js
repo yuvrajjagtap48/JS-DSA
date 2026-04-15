@@ -1,7 +1,7 @@
 function LargestOdd(num){
-    let n = num.length - 1;
+    let n = num.length;
     while(n >= 0){
-        if(num[n] % 2 === 1){                 // 0 for even
+        if(num[n] % 2 === 1){
             return num.substring(0, n+1);
         }
         --n;
@@ -9,5 +9,6 @@ function LargestOdd(num){
     return "";
 }
 
-num = "7890953";
+
+num = "78909000";
 console.log(LargestOdd(num));

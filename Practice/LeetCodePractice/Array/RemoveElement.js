@@ -13,3 +13,4 @@ const nums = [3, 2, 2, 3, 1, 3, 1];
 const val = 3;
 const newLength = RemoveElement(nums, val);
 console.log(newLength);
+

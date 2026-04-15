@@ -38,18 +38,19 @@ function ValidPalindrome(s){
     let j = s.length - 1;
 
     function isAlpha(c){
-        return  (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9');
+        return (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9');
     }
+
     while(i < j){
         if(!isAlpha(s[i])){
-            ++i;
+            i++;
         }
-        else if(!isAlpha[j]){
-            --j;
+        else if(!isAlpha(s[j])){
+            j--;
         }
         else if(s[i] === s[j]){
-            ++i;
-            --j;
+            i++;
+            j--;
         }
         else{
             return false;
@@ -57,7 +58,6 @@ function ValidPalindrome(s){
     }
     return true;
 }
+
 const s = "A man a plan a canal: Panama";
 console.log(ValidPalindrome(s));
-
-

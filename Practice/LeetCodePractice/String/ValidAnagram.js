@@ -10,11 +10,11 @@ function ValidAnagram(s, t) {
         }
     }
     for(let i = 0; i < t.length; i++){
-        if(!map[s[i]] || map[t[i]] < 0){
+        if(!map[t[i]] || map[t[i]] < 0){
             return false;
         }
         else{
-            map[s[t]]--;
+            map[t[i]]--;
         }
     }
     return true;
@@ -23,3 +23,4 @@ function ValidAnagram(s, t) {
 let s = "anagram",
   t = "nagaram";
 console.log(ValidAnagram(s, t));
+

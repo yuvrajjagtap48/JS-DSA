@@ -15,9 +15,6 @@ function SingleNumber(nums){
     }
 }
 
-const nums = [1,2,1,2,3,4,3,5,5];
-console.log(SingleNumber(nums)); 
-
 // function SingleNumber(nums){
 //     let xor = 0;
 //     for(let i = 0;i < nums.length; i++){
@@ -25,3 +22,6 @@ console.log(SingleNumber(nums));
 //     }
 //     return xor;
 // }
+
+const nums = [1,2,1,2,3,1,1,4,3,5,5];
+console.log(SingleNumber(nums)); 

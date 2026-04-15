@@ -10,3 +10,4 @@ function MissingNumber(nums){
 
 const nums = [0, 4, 1, 2, 5];
 console.log(MissingNumber(nums));
+
