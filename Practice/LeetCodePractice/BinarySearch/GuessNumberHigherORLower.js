@@ -16,7 +16,6 @@ function guessNumber(n) {
     }
 }
 
-
 // Forward declaration of guess API.
 function guess(num) {
     const pick = 6;
@@ -30,5 +29,6 @@ function guess(num) {
         return 1;
     }
 }   
-let result = guessNumber(10);
+let result = guessNumber(8);
 console.log(result);
+

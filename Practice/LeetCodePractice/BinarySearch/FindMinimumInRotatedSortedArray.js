@@ -17,10 +17,7 @@ function findMin(nums){
         }
     }
 }
-
-
-let result = findMin([3,4,5,0,1,2]);
+let result = findMin([3,4,5,1,2]);
 console.log(result);
-
-       
+      
     

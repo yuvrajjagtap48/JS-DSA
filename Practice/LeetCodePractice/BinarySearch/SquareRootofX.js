@@ -17,4 +17,5 @@ function squareRoot(x) {
     return r;
 }
 
-console.log(squareRoot(49)); 
+console.log(squareRoot(36)); 
+
