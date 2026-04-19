@@ -20,6 +20,3 @@ function close(arr, k, x) {
 let result = close([1, 1, 2, 2, 3, 3, 4, 5, 5, 8, 8], 4, 5);
 console.log(result);
 
-function close(){
-    let l = 0;
-}
