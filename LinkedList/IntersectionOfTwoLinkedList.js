@@ -1,3 +1,37 @@
+// //using two pointers
+// function intersection(headA, headB) {
+//     let n = 0;
+//     let pA = headA;
+//     while (pA) {
+//         n++;
+//         pA = pA.next;
+//     }
+//     let m = 0;
+//     let pB = headB;
+//     while (pB) {
+//         m++;
+//         pB = pB.next;
+//     }
+//     // make sure headA is the shorter list
+//     let diff = Math.abs(n - m);
+//     if(n > m) {
+//         let temp = headA;
+//         headA = headB;
+//         headB = temp;
+//     }
+//     //first list as small second list as large
+//     for (let i = 0; i < diff; i++) {
+//         headB = headB.next;
+//     }
+//     pA = headA;
+//     pB = headB;
+//     while (pA !== pB) {
+//         pA = pA.next;
+//         pB = pB.next;
+//     }
+//     return pA;
+// }
+
 function intersection(headA, headB) {
     if (!headA || !headB) return null;  
     let pointerA = headA;
@@ -8,6 +42,42 @@ function intersection(headA, headB) {
     }
     return pointerA;
 }
+
+//using set
+// function intersection(headA, headB) {
+//     let set = new Set();
+//     while(headB) {
+//         set.add(headB);
+//         headB = headB.next;
+//     }
+//     while(headA) {
+//         if (set.has(headA)) {
+//             return headA;
+//         }
+//         headA = headA.next;
+//     }
+//     return null;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
