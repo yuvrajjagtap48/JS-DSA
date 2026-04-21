@@ -1,19 +1,33 @@
 function mergeLists(l1, l2) {
-    let dummy = new ListNode();
-    let current = dummy;
-    while (l1 && l2) {
-        if (l1.val < l2.val) {
-            current.next = l1;
+    let start = new ListNode();
+    let curr = start;
+
+    while(l1 && l2) {
+        if(l1.val < l2.val) {
+            curr.next = l1;
             l1 = l1.next;
-        }
-        else {            current.next = l2;
+        } 
+        else {
+            curr.next = l2;
             l2 = l2.next;
-        }
-        current = current.next;
+        }   
+        curr = curr.next;
     }
-    current.next = l1 || l2;
-    return dummy.next;
+    if(!l1) {
+        curr.next = l2;
+    }
+    if(!l2) {
+        curr.next = l1;
+    }
+    return start.next;
 }
+
+
+
+
+
+
+
 
 // Example usage:
 function ListNode(val) {
