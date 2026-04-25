@@ -52,3 +52,8 @@ function trappingRainWater(height) {
 //     }
 //     return count;
 // };
+
+
+function trappingran(height){
+    
+}
