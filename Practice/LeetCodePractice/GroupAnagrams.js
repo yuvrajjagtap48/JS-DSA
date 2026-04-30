@@ -62,6 +62,3 @@ var groupAnagrams = function(strs) {
 };
 
 
-function groupAnagramas(strs){
-       
-}
