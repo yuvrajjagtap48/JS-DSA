@@ -19,3 +19,7 @@ function wordPattern(pattern, s) {
 
 let result = wordPattern("abba", "dog cat cat dog");
 console.log(result);
+
+
+function wordPattern(pattern, s) {
+    const words = s.split(' ');
